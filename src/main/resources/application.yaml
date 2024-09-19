@@ -1,0 +1,13 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: kotlinboot
+  datasource:
+    url: jdbc:postgresql://localhost:5432/kotlinboot
+    username: postgres
+    password: karakesek
+jwt:
+  key: ${JWT_KEY}
+  access-token-expiration: 3600000
+  refresh-token-expiration: 86400000
